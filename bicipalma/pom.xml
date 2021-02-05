@@ -55,7 +55,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>edu.pingpong.bicipalma.Cosa</mainClass>
+                <mainClass>edu.pingpong.bicipalma.Bicipalma</mainClass>
               </manifest>
               <manifestEntries>
                 <url>${project.url}</url>
