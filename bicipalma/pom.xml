@@ -30,6 +30,28 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.8.4</version>
+          <executions>
+            <execution>
+              <id>start-agent</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>generate-report</id>
+              <goals>
+                <goal>report</goal>
+              </goals>
+              <configuration>
+                <title>Coverage with JaCoCo</title>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
